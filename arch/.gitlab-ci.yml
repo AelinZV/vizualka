@@ -1,0 +1,28 @@
+default:
+  image: registry.csc.sibsutis.ru/trpo/ci
+
+stages:
+  - check-codestyle
+  - build
+
+.check-codestyle:
+  script:
+    - echo "Checking codestyle..."
+    - git ls-files "*.c" "*.h" | xargs clang-format -i --verbose
+    - git diff --exit-code || (echo "Codestyle errors detected!"; exit 1)
+    - echo "Codestyle check passed."
+
+.build-script:
+  script:
+    - echo "Compiling the code..."
+    - make -C src
+    - make -C console
+    - echo "Compilation complete."
+
+checkstyle:
+  stage: check-codestyle
+  extends: .check-codestyle
+
+build:
+  stage: build
+  extends: .build-script
