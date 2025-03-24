@@ -9,7 +9,7 @@ const App = () => {
   const [city, setCity] = useState("Novosibirsk"); // Город по умолчанию
   const [coords, setCoords] = useState({ lat: 55.0415, lon: 82.9346 }); // Координаты Москвы по умолчанию
   const [error, setError] = useState(null);
-  const API_KEY = "7960fb1ffc8c38bcb43d6995dddff223"; // Замените на ваш API-ключ
+  const API_KEY = "fe13807fd2caf8fd92ea67cb48845754"; // Замените на ваш API-ключ
 
   // Функция для получения координат города
   const fetchCoordinates = async (cityName) => {

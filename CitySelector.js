@@ -6,7 +6,7 @@ const CitySelector = ({ onCityChange, currentCity }) => {
   const [cityInput, setCityInput] = useState(currentCity);
   const [suggestions, setSuggestions] = useState([]); // Список предложенных городов
   const [showSuggestions, setShowSuggestions] = useState(false); // Показывать/скрывать список
-  const API_KEY = "your_api_key_here"; // Замените на ваш API-ключ
+  const API_KEY = "fe13807fd2caf8fd92ea67cb48845754"; // Замените на ваш API-ключ
 
   // Функция для получения предложений городов
   const fetchCitySuggestions = async (query) => {
