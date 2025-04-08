@@ -1,0 +1,119 @@
+.dataset-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px 0;
+  }
+  
+  .dataset-table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    table-layout: fixed; /* Фиксированная таблица для равномерного распределения */
+  }
+  
+  .dataset-table th,
+  .dataset-table td {
+    border: 1px solid #030303;
+    border-radius: 3px;
+    padding: 8px;
+    text-align: left;
+    overflow: hidden; /* Скрываем переполнение */
+    text-overflow: ellipsis; /* Добавляем многоточие для длинного текста */
+    white-space: nowrap; /* Запрещаем перенос текста */
+  }
+  
+  .dataset-table th {
+    background-color: #f1c4c4;
+  }
+  
+  /* Фиксированные ширины для столбцов */
+  .selection-column {
+    width: 30px;
+    background-color: #f1c4c4;
+    cursor: pointer;
+  }
+  
+  .column-id {
+    width: 50px;
+  }
+  
+  .column-postId {
+    width: 70px;
+  }
+  
+  .column-name {
+    width: 150px;
+  }
+  
+  .column-email {
+    width: 150px;
+  }
+  
+  .column-body {
+    width: 400px;
+  }
+  
+  .column-actions {
+    width: 150px;
+  }
+  
+  .selection-column:hover {
+    background-color: #f3aeae;
+  }
+  
+  .dataset-table tr.selected {
+    background-color: #f3aeae;
+  }
+  
+  .delete-button {
+    margin-bottom: 10px;
+    padding: 8px 16px;
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .delete-button:hover {
+    background-color: #cc0000;
+  }
+  
+  .dataset-table input {
+    width: 100%;
+    padding: 4px;
+    box-sizing: border-box;
+  }
+  
+  .actions-cell {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+  }
+  
+  .edit-button,
+  .delete-row-button {
+    padding: 4px 12px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 60px; /* Фиксированная ширина кнопок */
+    text-align: center;
+  }
+  
+  .edit-button {
+    background-color: #61dafb;
+  }
+  
+  .edit-button:hover {
+    background-color: #4db8d9;
+  }
+  
+  .delete-row-button {
+    background-color: #ff4444;
+    color: white;
+  }
+  
+  .delete-row-button:hover {
+    background-color: #cc0000;
+  }
