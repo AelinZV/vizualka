@@ -107,12 +107,12 @@ const DataSet = ({
                     >
                       Edit
                     </button>
-                    <button 
+                    {/* <button 
                       onClick={() => handleRowDelete(row.id)}
                       className="delete-row-button"
                     >
                       Delete
-                    </button>
+                    </button> */}
                   </>
                 )}
               </td>

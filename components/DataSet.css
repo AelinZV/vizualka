@@ -8,25 +8,24 @@
     border-collapse: collapse;
     width: 100%;
     font-family: Arial, sans-serif;
-    table-layout: fixed; /* Фиксированная таблица для равномерного распределения */
+    table-layout: fixed;
   }
   
   .dataset-table th,
   .dataset-table td {
     border: 1px solid #030303;
-    border-radius: 3px;
+    /* border-radius: 3px; */
     padding: 8px;
     text-align: left;
-    overflow: hidden; /* Скрываем переполнение */
-    text-overflow: ellipsis; /* Добавляем многоточие для длинного текста */
-    white-space: nowrap; /* Запрещаем перенос текста */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   
   .dataset-table th {
     background-color: #f1c4c4;
   }
   
-  /* Фиксированные ширины для столбцов */
   .selection-column {
     width: 30px;
     background-color: #f1c4c4;
@@ -37,20 +36,24 @@
     width: 50px;
   }
   
+  .column-userId,
   .column-postId {
     width: 70px;
   }
   
-  .column-name {
-    width: 150px;
-  }
-  
-  .column-email {
+  .column-name,
+  .column-username,
+  .column-email,
+  .column-title {
     width: 150px;
   }
   
   .column-body {
-    width: 400px;
+    width: 300px;
+  }
+  
+  .column-completed {
+    width: 100px;
   }
   
   .column-actions {
@@ -79,7 +82,8 @@
     background-color: #cc0000;
   }
   
-  .dataset-table input {
+  .dataset-table input,
+  .dataset-table select {
     width: 100%;
     padding: 4px;
     box-sizing: border-box;
@@ -97,7 +101,7 @@
     border: none;
     border-radius: 3px;
     cursor: pointer;
-    width: 60px; /* Фиксированная ширина кнопок */
+    width: 60px;
     text-align: center;
   }
   
